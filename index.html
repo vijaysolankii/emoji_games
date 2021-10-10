@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
+    <title>KIOSK</title>
+    <link rel="stylesheet" href="screen.css">
+</head>
+<body>
+    <div id="full_wrapper">
+        <section class="exibition">
+            <h2>KIOSK for Exhibition</h2>
+            <div class="how-work">
+                <div class="how-work-left-col">
+                    <img src="images/play.png" class="play_icon" alt="play.png">
+                </div>
+                <div class="how-work-right-col">
+                    <h3>How it works</h3>
+                    <p>Kiosks are large public marketing displays. 
+                        A BMG Kiosk draws in passers-by to play a branded-mini game in which they stand a chance to win a reward that builds has the potential to build awareness and a possible customer relationship between brand and player, depending on the nature of the campaign.</p>
+                </div>
+            </div>
+            <div class="ideal-koisk">
+                <div class="ideal-left-col">
+                    <h3>Ideal Kiosk Marketing Locations:</h3>
+                    <ul>
+                        <li>Tradeshows and consumer events</li>
+                        <li>Wherever  potential streams of people are to be 
+                            e.g. shopping malls, doctor clinics, supermarkets etc.</li>
+                    </ul>
+                </div>
+                <div class="ideal-right-col">
+                    <img src="images/map.png" alt="map" class="map">
+                </div>
+            </div>
+            <div class="ideal-anim">
+                <div class="top_area">
+                    <div class="top-left-text">
+                        <img src="images/ic2.png" alt="ic2" class="item-2">
+                        <span>Available <br>
+                            online & offline</span>
+                    </div>
+                    <div class="top-right-text">
+                        <img src="images/ic3.png" alt="ic3" class="item-3">
+                        <span>Collect data via in-game forms & call-to-action </span>
+                    </div>
+                </div>
+                <div class="middle_anim">
+                    <img src="images/mobile.png" alt="mobile.png" class="mobile">
+                </div>
+                <div class="bottom_area">
+                    <div class="bottom-left-text">
+                        <img src="images/ic1.png" alt="ic1" class="item-1">
+                        <span>Supports location-based 
+                            technology e.g. Beacons</span>
+                    </div>
+                    <div class="bottom-right-text">
+                        <img src="images/ic4.png" alt="ic4" class="item-4">
+                        <span>Multiple social sharing options & leaderboard function</span>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="elearning_gaming">
+            <h2>eLearning with Gaming</h2>
+            <p>Gamification is the buzzword in every organisation in the area of eLearning .  Why? </p>
+            <div class="inner_blocks">
+                <div class="inner_block">
+                    <div class="img_wrap"><img src="images/b1.png" alt="b1"></div>
+                    <h4>One source:</h4>
+                    <p>Runs on all devices (Cross-platform. mobile, tablet and PC in HTML5 format)</p>
+                </div>
+                <div class="inner_block">
+                    <div class="img_wrap"><img src="images/b2.png" alt="b2"></div>
+                    <h4>No time/location bound:</h4>
+                    <p>Employees can learn anytime and anywhere they go on their mobile phone, tablet and PC. </p>
+                </div>
+                <div class="inner_block">
+                    <div class="img_wrap"><img src="images/b3.png" alt="b3"></div>
+                    <h4>Highly fun and motivating:</h4>
+                    <p>Interactive game elements and social sharing among colleagues will increase the learning effect</p>
+                </div>
+                <div class="inner_block">
+                    <div class="img_wrap"><img src="images/b4.png" alt="b4"></div>
+                    <h4>Measurable key objectives:</h4>
+                    <p>Each employee login ID enables to track and extract all kinds stats of users journey and the points collected. </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="popup_container">
+        <div class="popup_content">
+            <a href="javascript:void(0)" class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </a>
+            <div class="popup_content_data">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, qui commodi omnis perspiciatis nemo laborum reiciendis nobis earum, voluptatibus numquam odit suscipit. Aliquid, expedita, veniam laudantium dolorem odit molestias ratione, vero eos fuga dolores placeat? Dolorum soluta, architecto dicta sapiente quos, distinctio assumenda repellendus ducimus expedita, veritatis magni! Consequuntur explicabo voluptates, excepturi ipsam ipsa commodi temporibus molestiae! Voluptas, ullam ducimus voluptatem rem temporibus quia fuga exercitationem? Dignissimos pariatur harum vero quos odit distinctio iusto fuga necessitatibus iste accusantium sunt sit provident, ut quo ab dolores. Ea deserunt quia voluptatem? Voluptate quae temporibus explicabo consequuntur ipsam non! Voluptate vitae quos pariatur.</p>
+            </div> 
+        </div>
+    </div> 
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $('.play_icon').on('click',function(){
+            $('.popup_container').addClass('active')
+        })
+        $('.close').on('click',function(){
+            $('.popup_container').removeClass('active')
+        })
+    </script>
+
+</body>
+</html>

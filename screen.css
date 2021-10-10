@@ -1,0 +1,140 @@
+/* Font Face */
+@font-face {
+    font-family: 'Calibre';
+    src: url('./fonts/Calibre-Medium.eot');
+    src: url('./fonts/Calibre-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Calibre-Medium.woff2') format('woff2'),
+        url('./fonts/Calibre-Medium.woff') format('woff'),
+        url('./fonts/Calibre-Medium.ttf') format('truetype'),
+        url('./fonts/Calibre-Medium.svg#Calibre-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro';
+    src: url('./fonts/AkzidenzGroteskPro-Regular.eot');
+    src: url('./fonts/AkzidenzGroteskPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/AkzidenzGroteskPro-Regular.woff2') format('woff2'),
+        url('./fonts/AkzidenzGroteskPro-Regular.woff') format('woff'),
+        url('./fonts/AkzidenzGroteskPro-Regular.ttf') format('truetype'),
+        url('./fonts/AkzidenzGroteskPro-Regular.svg#AkzidenzGroteskPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibre';
+    src: url('./fonts/Calibre-Semibold.eot');
+    src: url('./fonts/Calibre-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Calibre-Semibold.woff2') format('woff2'),
+        url('./fonts/Calibre-Semibold.woff') format('woff'),
+        url('./fonts/Calibre-Semibold.ttf') format('truetype'),
+        url('./fonts/Calibre-Semibold.svg#Calibre-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibre';
+    src: url('./fonts/Calibre-Light.eot');
+    src: url('./fonts/Calibre-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Calibre-Light.woff2') format('woff2'),
+        url('./fonts/Calibre-Light.woff') format('woff'),
+        url('./fonts/Calibre-Light.ttf') format('truetype'),
+        url('./fonts/Calibre-Light.svg#Calibre-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* Page css started */
+
+body{margin: 0;padding: 0;box-sizing: border-box;position: relative;}
+*::after,*::before{clear: both;}
+
+#full_wrapper{max-width: 1105px;width: 100%;margin: 0 auto;padding: 135px 15px 280px;}
+
+
+h2{font-size: 54pt;font-weight: bold;font-family: 'Akzidenz-Grotesk Pro';position: relative;margin: 0 0 0 0;text-align: center;line-height: 105pt;letter-spacing: 2px;padding-bottom: 15px;}
+h2:after{content: "";position: absolute;bottom: 0;left: 0;right: 0;width: 230px;height: 5px;background-color: #25aae1;margin: 0 auto;}
+h3,.ideal-anim span{font-family: 'Calibre',serif;font-weight: 600;margin-top: 0;font-size: 28pt;color: #303235;margin-bottom: 15px;}
+
+.ideal-left-col ul li,p{font-size: 22pt;line-height: 32pt;color: #303235;font-family: 'Calibre',serif;font-weight: 300;margin: 0;}
+
+.how-work,.ideal-koisk{display: flex;justify-content: space-between;padding: 55px 0;}
+.how-work .how-work-left-col{width: 50%;background-image: url('images/popup_bg.png');height: 312px;display: flex;align-items: center;justify-content: center;}
+.how-work .how-work-right-col{width: 44%;}
+.how-work .how-work-left-col .play_icon{transition: 0.35s all linear ;}
+.how-work .how-work-left-col:hover .play_icon { transform:scale(0.9);}
+.ideal-koisk{align-items: center;}
+.ideal-koisk .ideal-left-col {width: 55%;}
+.ideal-koisk .ideal-right-col {width: 45%;text-align: center;}
+.ideal-left-col ul{padding:0 0 0 0px;margin:0;}
+.ideal-left-col ul li{display: flex;}
+.ideal-left-col ul li::marker{display: none;content: "";}
+.ideal-left-col ul li::before{color: #25aae1;content: "• ";margin-right: 10px;}
+.ideal-anim{padding: 115px 0;}
+
+.middle_anim { text-align: center;}
+.top_area div,.bottom_area div{position:relative;width: 43%;display: flex;align-items: flex-start;padding: 40px 0;}
+.ideal-anim span{font-size:26pt;margin-left:20px;position: relative;}
+.top-right-text,.bottom-right-text{right:-100px;}
+.top_area,.bottom_area{display: flex;justify-content: space-between;}
+.top-left-text,.bottom-left-text{left:-50px;}
+
+.elearning_gaming h2 + p{font-weight: 600;text-align: center;margin: 50px 0;}
+
+.inner_blocks{display: flex;flex-wrap: wrap;justify-content: space-between;}
+.inner_block .img_wrap{width: 100%;height: 350px;}
+.inner_block{width: 46%;padding: 30px 0;}
+.inner_block h4{font-weight: 600;font-family: 'Calibre',sans-serif;font-size: 25pt;margin: 0;margin-bottom: 15px;}
+.inner_block p{font-weight: 300;font-family: 'Calibre',sans-serif;font-size: 25pt;}
+
+/* popupcontainer */
+.popup_container{height: 100%;width: 100%;position: fixed;top: 0%;left: 0%;display: flex;align-items: center;justify-content: center;opacity: 0;visibility: hidden;transition: 0.3s ease all;background-color: rgba(0,0,0,0.7);}
+.popup_container.active{opacity: 1;visibility: visible;}
+.popup_content{width: 400px; height: 280px; transform: translateY(-100%); padding: 50px 40px;transition: 0.3s ease all;background-color: #fff;position: relative;}
+.close{position: absolute;right: 15px;top: 15px;}
+.popup_container.active .popup_content{transform: translateY(0%);}
+.popup_container.active .popup_content_data p{font-size: 16px;line-height: 22px;}
+
+
+
+
+/* Responsive Css */
+@media screen and (max-width:1024px) {
+    #full_wrapper{padding: 60px 20px;}
+    .top-left-text,.bottom-left-text{left:0px;}
+    .top-right-text,.bottom-right-text{right:0px;}
+}
+
+
+@media screen and (max-width:991px) {
+    .img_wrap img{max-width:90%;}
+    .inner_block .img_wrap{height: 220px;}
+    h2{font-size: 42pt;line-height: 78pt;}   
+}
+
+@media screen and (max-width:767px) {
+    h2{font-size: 24pt;line-height: 40pt;}   
+    .top_area, .bottom_area, .how-work, .ideal-koisk{flex-direction: column;}
+    .top_area div, .bottom_area div{width: 100%;padding: 20px 0;}
+    .top_area img, .bottom_area img{max-width: 15%;}
+    .how-work .how-work-left-col,.how-work .how-work-right-col,.ideal-koisk .ideal-left-col,.ideal-koisk .ideal-right-col,.inner_block{width: 100%;}
+    .map,.mobile{max-width: 50%;}
+    .popup_content{width: 70%;overflow: auto;}
+    .how-work .how-work-right-col,.ideal-koisk .ideal-right-col{margin-top: 30px;}
+    h3, .ideal-anim span{font-size: 20pt;margin-bottom: 5px;}
+    .ideal-left-col ul li, p{font-size:20pt;line-height:25pt;}
+    .how-work,.ideal-koisk{padding:55px 0 0px 0;}
+    .ideal-anim{padding:50px 0;}
+    .img_wrap img{max-width:65%;}
+    .inner_block h4{font-size: 20pt;margin-bottom: 5px;margin-top: 20px;}
+    .inner_block p{font-size: 18pt;line-height: 1.2;}
+}

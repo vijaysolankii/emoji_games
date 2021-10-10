@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Calibre';
+    src: url('Calibre-Medium.eot');
+    src: url('Calibre-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Calibre-Medium.woff2') format('woff2'),
+        url('Calibre-Medium.woff') format('woff'),
+        url('Calibre-Medium.ttf') format('truetype'),
+        url('Calibre-Medium.svg#Calibre-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro';
+    src: url('AkzidenzGroteskPro-Regular.eot');
+    src: url('AkzidenzGroteskPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AkzidenzGroteskPro-Regular.woff2') format('woff2'),
+        url('AkzidenzGroteskPro-Regular.woff') format('woff'),
+        url('AkzidenzGroteskPro-Regular.ttf') format('truetype'),
+        url('AkzidenzGroteskPro-Regular.svg#AkzidenzGroteskPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibre';
+    src: url('Calibre-Semibold.eot');
+    src: url('Calibre-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('Calibre-Semibold.woff2') format('woff2'),
+        url('Calibre-Semibold.woff') format('woff'),
+        url('Calibre-Semibold.ttf') format('truetype'),
+        url('Calibre-Semibold.svg#Calibre-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibre';
+    src: url('Calibre-Light.eot');
+    src: url('Calibre-Light.eot?#iefix') format('embedded-opentype'),
+        url('Calibre-Light.woff2') format('woff2'),
+        url('Calibre-Light.woff') format('woff'),
+        url('Calibre-Light.ttf') format('truetype'),
+        url('Calibre-Light.svg#Calibre-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
